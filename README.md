@@ -11,3 +11,7 @@ LifeCycle Metrics: https://aep-sdks.gitbook.io/docs/getting-started/enable-lifec
 Implementation of Track State and Track Action: https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk
 
 Hybrid App implementation AppendToURL: https://experienceleague.adobe.com/docs/mobile-services/android/sdk-reference-android/hybrid-app.html?lang=en#section_1755BCCFD42D456EB2319141030FDDFF
+
+
+Project Griffon for App Debugging: https://aep-sdks.gitbook.io/docs/beta/project-griffon
+
