@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content">
+
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductString">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/MaterialTheme.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="397dp"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/MaterialTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_productstring"
+        android:layout_width="384dp"
+        android:layout_height="730dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="381dp"
+        android:layout_height="230dp"
+        android:text='The products variable cannot be set by using processing rules. In the Mobile SDK, you must use a special syntax in the context data parameter to set products on the server call.\n  \n The following events needs to be added to when a product is \n - view a product "prodView"\n - view basket \"scView"\ \n - add product to basket \"scAdd\"\n - a purchase id, alongside purchase\n - a purchase context data key, and any other data you want to collect.\n '
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Sample code"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorAccent"
+        android:text="1. Product Detail Page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="363dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/prodviewevent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btn_prodViewCode"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+
+        android:layout_marginTop="372dp"
+        android:text="View Code"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btn_prodViewSendRequest"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="372dp"
+        android:text="Send Request"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/btn_prodViewCode"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="363dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="432dp"
+        android:src="@drawable/addtobasket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btn_addtobasketsendrequest"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="520dp"
+        android:text="Send Request"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/btn_prodViewCode"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btn_prodViewCode6"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+
+        android:layout_marginTop="520dp"
+        android:text="View Code"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/colorAccent"
+        android:text="2. Addto Basket"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="363dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="584dp"
+        android:src="@drawable/purchase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="304dp"
+        android:background="@color/colorAccent"
+        android:text="3. Purchase"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_prodViewCode7"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+
+        android:layout_marginTop="672dp"
+        android:text="View Code"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btn_purchasesendrequest"
+        style="@style/button_submit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="672dp"
+        android:text="Send Request"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/btn_prodViewCode"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
