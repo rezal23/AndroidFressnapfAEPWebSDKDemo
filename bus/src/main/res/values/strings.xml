@@ -11,6 +11,8 @@
     <string name="btn_find_buses">get buses</string>
     <string name="btn_crash">crash app</string>
     <string name="btn_privacy">Privacy</string>
+    <string name="btn_webview">Web View</string>
+    <string name="btn_prodString">Product String</string>
     <string name="txtCountDown">TickTock</string>
     <string name="btn_proceed">proceed</string>
     <string name="lb_default">Relevance</string>
@@ -29,4 +31,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_app_crash">AppCrashActivity</string>
     <string name="title_activity_privacy">PrivacyActivity</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_productstring">ProductString</string>
 </resources>

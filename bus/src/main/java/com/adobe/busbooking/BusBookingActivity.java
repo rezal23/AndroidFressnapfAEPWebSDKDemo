@@ -29,14 +29,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import com.adobe.marketing.mobile.MobileCore;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * This activity class is responsible to show booking engine page and offer card.
@@ -89,6 +85,19 @@ public class BusBookingActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_webview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BusBookingActivity.this, MyWebView.class));
+            }
+        });
+
+        findViewById(R.id.btn_productString).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BusBookingActivity.this, ProductString.class));
+            }
+        });
         findViewById(R.id.btn_crash).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

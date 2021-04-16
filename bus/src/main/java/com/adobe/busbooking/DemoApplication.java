@@ -26,6 +26,7 @@ import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
 import com.adobe.marketing.mobile.Signal;
 import com.adobe.marketing.mobile.UserProfile;
+import com.adobe.marketing.mobile.Assurance;
 
 
 import android.app.Application;
@@ -37,15 +38,16 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         MobileCore.setApplication(this);
             MobileCore.setLogLevel(LoggingMode.DEBUG);
-
         try {
             Analytics.registerExtension();
             UserProfile.registerExtension();
             Identity.registerExtension();
             Lifecycle.registerExtension();
             Signal.registerExtension();
+            Assurance.registerExtension();
             MobileCore.start(new AdobeCallback () {
                 @Override
                 public void call(Object o) {
