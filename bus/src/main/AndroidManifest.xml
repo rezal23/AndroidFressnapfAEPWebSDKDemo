@@ -13,9 +13,13 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:label">
         <activity
+            android:name=".test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/MaterialTheme.NoActionBar"></activity>
+        <activity
             android:name=".ProductString"
             android:label="@string/title_activity_productstring"
-            android:theme="@style/MaterialTheme.NoActionBar"></activity>
+            android:theme="@style/MaterialTheme.NoActionBar" />
         <activity
             android:name=".MyWebView"
             android:label="@string/title_activity_web_view"
@@ -49,8 +53,8 @@
         <activity android:name=".OfferDetailsActivity" />
         <activity android:name=".SampleFragmentActivity" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

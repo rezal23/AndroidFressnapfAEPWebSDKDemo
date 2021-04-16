@@ -33,4 +33,5 @@
     <string name="title_activity_privacy">PrivacyActivity</string>
     <string name="title_activity_web_view">WebView</string>
     <string name="title_activity_productstring">ProductString</string>
+    <string name="title_activity_test">test</string>
 </resources>
