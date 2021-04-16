@@ -1,6 +1,17 @@
-This application has developed in order to demonstrate the travel app concept having following features.
+Android Demo App with AEP Mobile SDK
 
-1. Bus Booking Engine page.
-2. Bus and Traveller details page.
-3. Offers card on Bus Booking Engine page.
-4. Offer details page.
+Setup Launch AEP Mobile AEP SDK: https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property 
+
+Get the Mobile environment ID and initialize: https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property
+
+Implementation of the Core Mobile SDK: https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property
+
+LifeCycle Metrics: https://aep-sdks.gitbook.io/docs/getting-started/enable-lifecycle-metrics
+
+Implementation of Track State and Track Action: https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk
+
+Hybrid App implementation AppendToURL: https://experienceleague.adobe.com/docs/mobile-services/android/sdk-reference-android/hybrid-app.html?lang=en#section_1755BCCFD42D456EB2319141030FDDFF
+
+
+Project Griffon for App Debugging: https://aep-sdks.gitbook.io/docs/beta/project-griffon
+
